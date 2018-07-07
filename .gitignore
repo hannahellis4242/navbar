@@ -59,3 +59,11 @@ typings/
 
 # next.js build output
 .next
+
+# html linter cache
+.htmllintrc
+
+# node lockfile
+package-lock.json
+
+
