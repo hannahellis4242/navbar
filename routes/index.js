@@ -1,26 +1,10 @@
 var express = require('express');
 var router = express.Router();
+var pageData = require('pageData');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    res.render('index', {
-                                        title: 'Home',
-                                        nav: [
-                                                    {
-                                                        label:'Home',
-                                                        ref:'/'
-                                                    },
-                                                    {
-                                                        label:'About',
-                                                        ref:'/about'
-                                                    },
-                                                    {
-                                                        label:'Users',
-                                                        ref:'/users'
-                                                    },
-                                               ]
-				}
-		);
+    res.render('index', pageData('Home').data);
 });
 
 module.exports = router;

@@ -1,23 +1,11 @@
 var express = require('express');
 var router = express.Router();
+var pageData = require('pageData');
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
  // res.send('respond with a resource');
-  res.render('index', { title: 'Users' ,                                        nav: [
-                                                    {
-                                                        label:'Home',
-                                                        ref:'/'
-                                                    },
-                                                    {
-                                                        label:'About',
-                                                        ref:'/about'
-                                                    },
-                                                    {
-                                                        label:'Users',
-                                                        ref:'/users'
-                                                    },
-                                               ]});
+  res.render('index', pageData('Users').data);
 });
 
 module.exports = router;
