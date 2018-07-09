@@ -4,7 +4,7 @@ var pageData = require('pageData');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', pageData('About').data);
- })
+    res.render('index', pageData('About').data);
+})
 
 module.exports = router;

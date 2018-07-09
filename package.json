@@ -4,7 +4,11 @@
   "description": "atempt to implement a nav bar in express using bootstrap and ejs ect.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "fmt":"sh fmt.sh"
+  },
+  "engines": {
+    "node": "10.5.0"
   },
   "keywords": [
     "navbar"
