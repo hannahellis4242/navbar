@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "fmt":"sh fmt.sh"
+    "fmt": "sh fmt.sh"
   },
   "engines": {
     "node": "10.5.0"
@@ -25,5 +25,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/hannahellis4242/navbar.git"
-}
+  }
 }
