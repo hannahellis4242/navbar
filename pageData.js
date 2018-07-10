@@ -16,3 +16,5 @@ function pageData(pageTitle) {
         ]
     };
 }
+
+exports.pageData = pageData;

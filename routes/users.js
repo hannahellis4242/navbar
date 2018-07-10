@@ -4,8 +4,8 @@ var pageData = require('../pageData');
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-    // res.send('respond with a resource');
-    res.render('index', pageData('Users').data);
+    var data = new pageData.pageData('Users');
+    res.render('index', data.data);
 });
 
 module.exports = router;
